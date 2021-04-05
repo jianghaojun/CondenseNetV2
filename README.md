@@ -27,7 +27,7 @@ Reusing features in deep networks through dense connectivity is an effective way
 As an example, use the following command to train a CondenseNetV2-A/B/C on ImageNet
 
 ```
-python -m torch.distributed.launch --nproc_per_node=8 train.py --model cdnv2_a 
+python -m torch.distributed.launch --nproc_per_node=8 train.py --model cdnv2_a/b/c 
   --batch-size 1024 --lr 0.4 --warmup-lr 0.1 --warmup-epochs 5 --opt sgd --sched cosine \
   --epochs 350 --weight-decay 4e-5 --aa rand-m9-mstd0.5 --remode pixel --reprob 0.2 \
   --data_url /PATH/TO/IMAGENET --train_url /PATH/TO/LOG_DIR
@@ -101,11 +101,6 @@ python convert_and_eval.py --model cdnv2_a/b/c \
 | CondenseNet-122 | 116.7M | 0.95M | 4.48 | - |
 | CondenseNetV2-110 | 41M | 0.48M | 4.65 | 23.94 |
 | CondenseNetV2-146 | 62M | 0.78M | **4.35** | **22.52** |
-
-
-### Inference time on ARM processor and iPhone XS Max
-
-
 
 ## Contacts
 yangle15@mails.tsinghua.edu.cn
