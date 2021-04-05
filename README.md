@@ -1,5 +1,4 @@
 # CondenseNetV2
-# CondenseNetV2
 
 This repository is the official Pytorch implementation for "[CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/1711.09224)" paper by Le Yang\*, Haojun Jiang\*, Ruojin Cai, Yulin Wang, Shiji Song, [Gao Huang](http://www.gaohuang.net/) and Qi Tian (* Authors contributed equally).
 
