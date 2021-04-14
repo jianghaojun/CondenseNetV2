@@ -2,11 +2,7 @@
 
 This repository is the official Pytorch implementation for CVPR2021 paper "[CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/2104.04382)" by Le Yang\*, Haojun Jiang\*, [Ruojin Cai](https://www.cs.cornell.edu/~ruojin/), [Yulin Wang](https://www.rainforest-wang.cool/), Shiji Song, [Gao Huang](http://www.gaohuang.net/) and Qi Tian (* Authors contributed equally).
 
-**Comparison between CondenseNetV2, DenseNet, CondenseNet**.
-![Comparison](https://raw.githubusercontent.com/jianghaojun/CondenseNetV2/main/figures/figure1.png)
-
-**Sparse feature reactivation**.
-![SFR](https://raw.githubusercontent.com/jianghaojun/CondenseNetV2/main/figures/SFR.png)
+**Update on 2021/04/14: Release the training code on ImageNet.**
 
 ## Reference
 
@@ -33,6 +29,12 @@ If you find our project useful in your research, please consider citing:
 ## Introduction
 
 Reusing features in deep networks through dense connectivity is an effective way to achieve high computational efficiency. The recent proposed CondenseNet has shown that this mechanism can be further improved if redundant features are removed. In this paper, we propose an alternative approach named sparse feature reactivation (SFR), aiming at actively increasing the utility of features for reusing. In the proposed network, named **CondenseNetV2**, each layer can simultaneously learn to 1) selectively reuse a set of most important features from preceding layers; and 2) actively update a set of preceding features to increase their utility for later layers. Our experiments show that the proposed models achieve promising performance on image classification (ImageNet and CIFAR) and object detection (MS COCO) in terms of both theoretical efficiency and practical speed.
+
+**DenseNet, CondenseNet and CondenseNetV2**.
+![Comparison](https://raw.githubusercontent.com/jianghaojun/CondenseNetV2/main/figures/figure1.png)
+
+**Sparse feature reactivation**.
+![SFR](https://raw.githubusercontent.com/jianghaojun/CondenseNetV2/main/figures/SFR.png)
 
 ## Usage
 
@@ -96,6 +98,7 @@ python convert_and_eval.py --model cdnv2_a/b/c \
 | CondenseNetV2-C | 309M | 6.1M | 24.1 | [Download](https://cloud.tsinghua.edu.cn/smart-link/4625ac39-54b2-48c1-bcbd-c6d21a6b42fa/) | [Download](https://drive.google.com/file/d/1QaK-5KtVeK-d6ip8RMJhJ87dVmPAnWEA/view?usp=sharing) |
 
 ### Results on COCO2017 Detection
+The detection experiments are conducted based on the [mmdetection repository](https://github.com/open-mmlab/mmdetection). We simply replace the backbones of FasterRCNN and RetinaNet with our CondenseNetV2s.
 
 | Detection Framework | Backbone | Backbone FLOPs | mAP |
 |---|---|---|---|
@@ -134,4 +137,4 @@ Any discussions or concerns are welcomed!
 
 Our work is inspired by [CondenseNet: An Efficient DenseNet using Learned Group Convolutions](https://arxiv.org/abs/1711.09224) and we use the code in the official repository of [CondenseNet](https://github.com/ShichenLiu/CondenseNet).
 
-Thanks to Ross Wightman for building a powerful [Pytorch Image Models](https://github.com/rwightman/pytorch-image-models) repository.
+Thanks to Ross Wightman for building a powerful [Pytorch Image Models](https://github.com/rwightman/pytorch-image-models) repository, our training code is forked from his repository.
