@@ -1,6 +1,22 @@
 # CondenseNetV2
 
-This repository is the official Pytorch implementation for "[CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/1711.09224)" paper by Le Yang\*, Haojun Jiang\*, Ruojin Cai, Yulin Wang, Shiji Song, [Gao Huang](http://www.gaohuang.net/) and Qi Tian (* Authors contributed equally).
+This repository is the official Pytorch implementation for CVPR2021 paper "[CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/2104.04382)" by Le Yang\*, Haojun Jiang\*, [Ruojin Cai](https://www.cs.cornell.edu/~ruojin/), [Yulin Wang](https://www.rainforest-wang.cool/), Shiji Song, [Gao Huang](http://www.gaohuang.net/) and Qi Tian (* Authors contributed equally).
+
+![Alt text](https://github.com/jianghaojun/CondenseNetV2/blob/main/figures/figure1.png?raw=true)
+
+### Reference
+
+If you find our project useful in your research, please consider citing:
+
+```
+@inproceedings{yang2021condensenetv2,
+  title={CondenseNet V2: Sparse Feature Reactivation for Deep Networks},
+  author={Yang, Le and Jiang, Haojun and Cai, Ruojin and Wang, Yulin and Song, Shiji and Huang, Gao and Tian, Qi},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={4321--4330},
+  year={2021}
+}
+```
 
 ## Contents
 
@@ -8,6 +24,7 @@ This repository is the official Pytorch implementation for "[CondenseNet V2: Spa
 2. [Usage](#usage)
 3. [Results](#results)
 4. [Contacts](#contacts)
+5. [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -104,20 +121,13 @@ python convert_and_eval.py --model cdnv2_a/b/c \
 
 ## Contacts
 yangle15@mails.tsinghua.edu.cn
+
 jhj20@mails.tsinghua.edu.cn
 
 Any discussions or concerns are welcomed!
 
-### Citation
+## Acknowledgments
 
-If you find our project useful in your research, please consider citing:
+Our work is inspired by [CondenseNet: An Efficient DenseNet using Learned Group Convolutions](https://arxiv.org/abs/1711.09224) and we use the code in the official repository of [CondenseNet](https://github.com/ShichenLiu/CondenseNet).
 
-```
-@inproceedings{yang2021condensenetv2,
-  title={CondenseNet V2: Sparse Feature Reactivation for Deep Networks},
-  author={Yang, Le and Jiang, Haojun and Cai, Ruojin and Wang, Yulin and Song, Shiji and Huang, Gao and Tian, Qi},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  pages={4321--4330},
-  year={2021}
-}
-```
+Thanks to Ross Wightman for building a powerful [Pytorch Image Models](https://github.com/rwightman/pytorch-image-models) repository.
