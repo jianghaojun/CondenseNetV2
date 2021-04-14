@@ -2,10 +2,10 @@
 
 This repository is the official Pytorch implementation for CVPR2021 paper "[CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/2104.04382)" by Le Yang\*, Haojun Jiang\*, [Ruojin Cai](https://www.cs.cornell.edu/~ruojin/), [Yulin Wang](https://www.rainforest-wang.cool/), Shiji Song, [Gao Huang](http://www.gaohuang.net/) and Qi Tian (* Authors contributed equally).
 
-#####Comparison between CondenseNetV2, DenseNet, CondenseNet.
+**Comparison between CondenseNetV2, DenseNet, CondenseNet**.
 ![Comparison](https://raw.githubusercontent.com/jianghaojun/CondenseNetV2/main/figures/figure1.png)
 
-#####Sparse feature reactivation.
+**Sparse feature reactivation**.
 ![SFR](https://raw.githubusercontent.com/jianghaojun/CondenseNetV2/main/figures/SFR.png)
 
 ## Reference
