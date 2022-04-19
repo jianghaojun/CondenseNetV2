@@ -1,4 +1,3 @@
-import pdb
 import os
 import torch
 import argparse
@@ -75,7 +74,7 @@ if __name__ == '__main__':
     # x ticks
     plt.xticks([0, 1, 5, 10, 15, 20, 25, 30, 35], ['0', '1', '6', '11', '16', '21', '26', '31', '36'])
 
-    # titleb
+    # title
     plt.title(args.model_name, loc='center', pad=0)
 
     # stage separate line
@@ -104,8 +103,7 @@ if __name__ == '__main__':
     ax.spines['right'].set_linewidth(bwith)
 
     # save heatmap figure
-    plt.savefig('{}/{}_layer_level_reuse_heatmap.pdf'.format(args.out_path, args.model_name),
-                format='pdf')
+    plt.savefig('{}/{}_layer_level_reuse_heatmap.pdf'.format(args.out_path, args.model_name), format='pdf')
     plt.show()
 
 
