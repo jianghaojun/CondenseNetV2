@@ -1,8 +1,10 @@
 # CondenseNetV2
 
-This repository is the official Pytorch implementation for CVPR2021 paper "[CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/2104.04382)" by [Le Yang\*](https://www.yangle.cc), Haojun Jiang\*, [Ruojin Cai](https://www.cs.cornell.edu/~ruojin/), [Yulin Wang](https://www.rainforest-wang.cool/), Shiji Song, [Gao Huang](http://www.gaohuang.net/) and Qi Tian (* Authors contributed equally).
+This repository is the official Pytorch implementation for CVPR2021 paper "[CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/2104.04382)" by [Le Yang\*](https://www.yangle.cc), [Haojun Jiang\*](https://scholar.google.com/citations?user=ULmStp8AAAAJ&hl=en), [Ruojin Cai](https://www.cs.cornell.edu/~ruojin/), [Yulin Wang](https://www.rainforest-wang.cool/), Shiji Song, [Gao Huang](http://www.gaohuang.net/) and Qi Tian (* Authors contributed equally).
 
-**Update on 2021/04/14: Release the training code on ImageNet.**
+Update on 2021/04/14: Release the training code on ImageNet.
+
+**Update on 2022/04/19: Release the [visualization code](./visualize/plot_weight_layer_level.py).**
 
 ## Reference
 
@@ -90,11 +92,11 @@ python convert_and_eval.py --model cdnv2_a/b/c \
 
 ### Results on ImageNet
 
-| Model | FLOPs | Params | Top-1 Error | Tsinghua Cloud | Google Drive |
+| Model | FLOPs | Params | Top-1 Error | Converted Model | Unconverted Model |
 |---|---|---|---|---|---|
-| CondenseNetV2-A | 46M | 2.0M | 35.6 | [Download](https://cloud.tsinghua.edu.cn/smart-link/34933e0e-565b-4633-b1ea-a5266d3d3fcc/) | [Download](https://drive.google.com/file/d/1fhHeAGkdZnOEgv9f-IUCy_uNfc-QHcZ_/view?usp=sharing) |
-| CondenseNetV2-B | 146M | 3.6M | 28.1 | [Download](https://cloud.tsinghua.edu.cn/smart-link/444627eb-a296-458e-9a44-db38aca8a761/) | [Download](https://drive.google.com/file/d/1xFR3GcV1tsGq4tHhPS50XCW7AMnfWs6E/view?usp=sharing) |
-| CondenseNetV2-C | 309M | 6.1M | 24.1 | [Download](https://cloud.tsinghua.edu.cn/smart-link/4625ac39-54b2-48c1-bcbd-c6d21a6b42fa/) | [Download](https://drive.google.com/file/d/1QaK-5KtVeK-d6ip8RMJhJ87dVmPAnWEA/view?usp=sharing) |
+| CondenseNetV2-A | 46M | 2.0M | 35.6 | [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/smart-link/34933e0e-565b-4633-b1ea-a5266d3d3fcc/) / [Google Drive](https://drive.google.com/file/d/1fhHeAGkdZnOEgv9f-IUCy_uNfc-QHcZ_/view?usp=sharing) | - |
+| CondenseNetV2-B | 146M | 3.6M | 28.1 | [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/smart-link/444627eb-a296-458e-9a44-db38aca8a761/) / [Google Drive](https://drive.google.com/file/d/1xFR3GcV1tsGq4tHhPS50XCW7AMnfWs6E/view?usp=sharing) | - |
+| CondenseNetV2-C | 309M | 6.1M | 24.1 | [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/smart-link/4625ac39-54b2-48c1-bcbd-c6d21a6b42fa/) / [Google Drive](https://drive.google.com/file/d/1QaK-5KtVeK-d6ip8RMJhJ87dVmPAnWEA/view?usp=sharing) | [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/4e4a5246fc6249829ab0/?dl=1) / [Google Drive](https://drive.google.com/file/d/12efJqELir4tzPMP-gdsH3Kl6kc5WeJgf/view?usp=sharing) |
 
 ### Results on COCO2017 Detection
 The detection experiments are conducted based on the [mmdetection repository](https://github.com/open-mmlab/mmdetection). We simply replace the backbones of FasterRCNN and RetinaNet with our CondenseNetV2s.
