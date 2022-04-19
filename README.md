@@ -4,7 +4,7 @@ This repository is the official Pytorch implementation for CVPR2021 paper "[Cond
 
 Update on 2021/04/14: Release the training code on ImageNet.
 
-**Update on 2022/04/19: Release the [visualization code](./visualize/plot_weight_layer_level.py).**
+**Update on 2022/04/19: Release the [visualization code](./visualize).**
 
 ## Reference
 
