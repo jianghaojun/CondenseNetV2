@@ -128,9 +128,9 @@ The detection experiments are conducted based on the [mmdetection repository](ht
 | CondenseNetV2-146 | 62M | 0.78M | **4.35** | **22.52** |
 
 ## Contacts
-yangle15@mails.tsinghua.edu.cn
+yangle15 at mails.tsinghua.edu.cn
 
-jhj20@mails.tsinghua.edu.cn
+jhj20 at mails.tsinghua.edu.cn
 
 Any discussions or concerns are welcomed!
 
