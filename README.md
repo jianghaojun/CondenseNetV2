@@ -2,9 +2,11 @@
 
 This repository is the official Pytorch implementation for CVPR2021 paper "[CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/2104.04382)" by [Le Yang\*](https://www.yangle.cc), [Haojun Jiang\*](https://github.com/jianghaojun), [Ruojin Cai](https://www.cs.cornell.edu/~ruojin/), [Yulin Wang](https://www.rainforest-wang.cool/), Shiji Song, [Gao Huang](http://www.gaohuang.net/) and Qi Tian (*Authors contributed equally).
 
-Update on 2021/04/14: Release the training code on ImageNet.
+## News
 
-**Update on 2022/04/19: Release the [visualization code](./visualize).**
+- Update on 2021/04/14: Release the training code on ImageNet.
+
+- **Update on 2022/04/19: Release the [visualization code](./visualize).**
 
 ## Reference
 
